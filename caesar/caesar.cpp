@@ -1,9 +1,5 @@
-﻿#pragma once
-
 #include <string>
 #include <windows.h>
-#include <iostream>
-
 using namespace std;
 
 string Caesar(const string& LINE, const string& alphabet, int key) {
@@ -21,20 +17,20 @@ string Caesar(const string& LINE, const string& alphabet, int key) {
     return result;
 }
 
-void Execute1() {
+int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     int choice, Key;
     string inputLINE;
-    string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    string alphabet = "АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ";
 
-    cout << "Enter option what do you want to do encryption(1)\t decryption(2)" << endl;
+    cout << "Введіть функцію яку бажаєте виконати шифрування(1)\t розшифрування(2)" << endl;
     cin >> choice;
-    cout << "Enter key" << endl;
+    cout << "Введіть ключ" << endl;
     cin >> Key;
     cin.ignore(); // Очищення буфера вводу перед getline()
 
-    cout << "Enter word for encryption/decryption";
+    cout << "Введіть елемент для шифрування/розшифрування ";
     getline(cin, inputLINE);
 
     if (choice == 1) {
@@ -42,3 +38,4 @@ void Execute1() {
         cout << shifr;
     }
 }
+
