@@ -1,5 +1,9 @@
+﻿#pragma once
+
 #include <string>
 #include <windows.h>
+#include <iostream>
+
 using namespace std;
 
 string Caesar(const string& LINE, const string& alphabet, int key) {
@@ -17,7 +21,7 @@ string Caesar(const string& LINE, const string& alphabet, int key) {
     return result;
 }
 
-int main() {
+void Execute1() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     int choice, Key;
@@ -38,4 +42,3 @@ int main() {
         cout << shifr;
     }
 }
-
