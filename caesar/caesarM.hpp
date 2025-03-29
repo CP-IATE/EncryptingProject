@@ -40,6 +40,7 @@ int Execute2() {
         }
 
         cout << "Zashifrovane rechenniа: " << cipher << endl;
-        return 0;
+
     }
+    return 0;
 }
