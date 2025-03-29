@@ -26,7 +26,7 @@ void Execute1() {
     SetConsoleOutputCP(1251);
     int choice, Key;
     string inputLINE;
-    string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
     cout << "Enter option what do you want to do encryption(1)\t decryption(2)" << endl;
     cin >> choice;
