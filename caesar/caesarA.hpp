@@ -45,11 +45,13 @@ void Execute1() {
     c = toupper(c);
   }
 
-  // Шифрування
-  string shifr = Caesar(inputLINE, alphabet, Key);
-  cout << "\nEncrypted text: " << shifr << endl;
-
-  // Дешифрування
-  string deshifr = Caesar2(shifr, alphabet, Key);
-  cout << "Decrypted text: " << deshifr << endl;
+    if (choice == 1) {
+        string shifr = Caesar(inputLINE, alphabet, Key);
+        cout << shifr;
+ 
+    }
+    else if (choice == 2) {
+        string deshifr = Caesar(inputLINE, alphabet, -Key);
+        cout << deshifr;
 }
+
