@@ -30,12 +30,11 @@ string Caesar2(const string& LINE, const string& alphabet, int key) {
 
 // Головна функція виклику
 void Execute1() {
-  SetConsoleCP(1251);
-  SetConsoleOutputCP(1251);
-
-  int Key;
-  string inputLINE;
-  string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    int choice, Key;
+    string inputLINE;
+    string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
   cout << "Enter key: ";
   cin >> Key;
