@@ -40,5 +40,10 @@ void Execute1() {
     if (choice == 1) {
         string shifr = Caesar(inputLINE, alphabet, Key);
         cout << shifr;
+ 
     }
+    else if (choice == 2) {
+        string deshifr = Caesar(inputLINE, alphabet, -Key);
+        cout << deshifr;
 }
+
