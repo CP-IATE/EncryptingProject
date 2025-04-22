@@ -54,4 +54,5 @@ void Execute1() {
 		string deshifr = Caesar(inputLINE, alphabet, -Key);
 		cout << deshifr;
 	}
+}
 
